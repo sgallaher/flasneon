@@ -14,6 +14,7 @@ def home():
 @login_required
 def protected():
     return render_template("protected.html", user=current_user)
+
 @main.route("/admin")
 @login_required
 def admin_dashboard():
